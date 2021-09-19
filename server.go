@@ -5,5 +5,3 @@ func main() {
 		Time string `json:"time"`
 	}
 }
-
-//test
