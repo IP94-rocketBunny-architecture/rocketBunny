@@ -2,12 +2,10 @@ package main
 
 import (
 	"encoding/json"
-	// "log"
 	"net/http"
 	"time"
 )
 
-// main
 func main() {
 	type Time struct {
 		Time string `json:"time"`
