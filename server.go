@@ -1,5 +1,6 @@
 package main
 
+// lab1 Holovenko, team: RocketBunny
 import (
 	"encoding/json"
 	"net/http"
