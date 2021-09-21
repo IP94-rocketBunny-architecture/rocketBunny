@@ -1,8 +1,8 @@
 package main
 
-// lab1 Holovenko, team: RocketBunny
 import (
 	"encoding/json"
+	"log"
 	"net/http"
 	"time"
 )
@@ -19,4 +19,7 @@ func main() {
 		w.WriteHeader(200)
 		w.Write(res)
 	})
+
+	log.Println("Starting HTTP server")
+	log.Fatal(http.ListenAndServe(":8795", nil)) //http://localhost:8795/time
 }
