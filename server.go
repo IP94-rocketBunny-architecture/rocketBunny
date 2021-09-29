@@ -11,7 +11,7 @@ func main() {
 	type Time struct {
 		Time string `json:"time"`
 	}
-	//comment rebase
+
 	http.HandleFunc("/time", func(w http.ResponseWriter, req *http.Request) {
 		test := &Time{Time: time.Now().Format(time.RFC3339)} //current time
 		res, _ := json.Marshal(test)
